@@ -117,7 +117,7 @@ void avanzar(int piso[][20],int rt,int &r,int &c,int pluma,int girar,int avanze)
                     	r++;
                 	}
             	}
-            	if(r>avanze)
+            	if(r>avanze) // esto se los corregi, si le dices avanzar 5 pasos, la r jamas sera mayor que 5 y se supone que tieneshastael20
                 	r--;
             	break;
 	        case 4:
