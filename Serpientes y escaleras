@@ -16,7 +16,7 @@ main()
 	turno=1;
 	while(ban==0)
 	{
-		srand((unsigned)time(0));
+		srand((unsigned)time(0));  //DIJIMOS QUE ESTO SOLO SE USA UNA VEZ POR PROGRAMA yAQUI LA MANDAS LLAMAR EN CADA WHILE
 		if (turno==2)
 		{
 			turno=3;
@@ -29,6 +29,16 @@ main()
 			jugador1=tablero[jugador1];
 			cout<<"Dado = "<<dado<<endl;
 			jugador1=jugador1+dado;
+			//Tu logica me dice que si el jugador 1 esta en pos 5
+			//Tira el dado -->cayo 3
+			//Revisa lo que hay en la casilla 5 (serpiente o escalera)
+			//Avanza a 9
+			//Cuando le toque tirar denuevo
+			//lanza el dado, cayo 3
+			//revisa lo qu  hay en 9 por serpiente o escalera
+			//despues avanza a 9 + 3
+			//Si es esa la secuencia?
+			
 			cout<<"El jugador 1 esta en la posicion: "<<jugador1<<endl;
 			if(jugador1>=100)
 			{
